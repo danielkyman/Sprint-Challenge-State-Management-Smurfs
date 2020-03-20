@@ -9,11 +9,11 @@ const SmurfList = props => {
         <div className="error">{props.error}</div>
       ) : (
         props.smurfs.map(smurf => (
-          <>
+          <div className="smurf" key={smurf.id}>
             <h2>{smurf.name}</h2>
             <h3>{smurf.age}</h3>
             <h3>{smurf.height}</h3>
-          </>
+          </div>
         ))
       )}
     </div>

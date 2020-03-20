@@ -26,7 +26,8 @@ export const postData = data => dispatch => {
     .post("http://localhost:3333/smurfs", {
       name: data.name,
       age: data.age,
-      height: data.height
+      height: data.height,
+      id: Date.now()
     })
     .then(res => {
       console.log(res);
